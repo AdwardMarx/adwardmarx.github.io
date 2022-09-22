@@ -341,18 +341,16 @@
 
       
         
-          
-            <h3 id="建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。"><a href="#建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。" class="headerlink" title="建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。"></a>建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。</h3><h4 id="1-部署时出现-fatal-unable-to-access-‘’-OpenSSL-SSL-read-Connection-was-reset-errno-10054-的报错。"><a href="#1-部署时出现-fatal-unable-to-access-‘’-OpenSSL-SSL-read-Connection-was-reset-errno-10054-的报错。" class="headerlink" title="1.部署时出现 fatal: unable to access ‘’: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。"></a>1.部署时出现 fatal: unable to access ‘’: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。</h4><p>网上有解决方法是“解除SSL验证”：</p>
+          <h2 id="建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。"><a href="#建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。" class="headerlink" title="建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。"></a>建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。</h2><h3 id="1-部署时出现-fatal-unable-to-access-‘’-OpenSSL-SSL-read-Connection-was-reset-errno-10054-的报错。"><a href="#1-部署时出现-fatal-unable-to-access-‘’-OpenSSL-SSL-read-Connection-was-reset-errno-10054-的报错。" class="headerlink" title="1.部署时出现 fatal: unable to access ‘’: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。"></a>1.部署时出现 fatal: unable to access ‘’: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。</h3><p>网上有解决方法是“解除SSL验证”：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.sslVerify <span class="string">&quot;false&quot;</span></span><br><span class="line">$ git config --global https.sslVerify <span class="string">&quot;false&quot;</span></span><br></pre></td></tr></table></figure>
-<p>重新部署<br>也有人认为是因为国内网络不稳定导致的，可以多试几次。</p>
-<h4 id="2-在应用了next主题后，也添加了about，categories等页面，但点击后出现cannot-GET-x2F-20-x2F"><a href="#2-在应用了next主题后，也添加了about，categories等页面，但点击后出现cannot-GET-x2F-20-x2F" class="headerlink" title="2.在应用了next主题后，也添加了about，categories等页面，但点击后出现cannot GET &#x2F;20%&#x2F;"></a>2.在应用了next主题后，也添加了about，categories等页面，但点击后出现cannot GET &#x2F;20%&#x2F;</h4><p>解决方法：在next的_config.yml文件里找到“menu:”，将下面的about: &#x2F;about&#x2F; || user 改为</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">about: /about/|| user</span><br></pre></td></tr></table></figure>
-<p>原文件中about后面的两个符号间有个空格，把空格去掉就好了。</p>
-<h4 id="3-无法显示更改后的图标"><a href="#3-无法显示更改后的图标" class="headerlink" title="3.无法显示更改后的图标"></a>3.无法显示更改后的图标</h4><p>解决方法：按照需求将两个图标文件保存到themes\next\source文件夹中。格式应该为ico或png，大小一个为16×16，另一个为32×32。<br>修改next的_config.yml文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">favicon:</span><br><span class="line">  small: /images/favicon16.png</span><br><span class="line">  medium: /images/favicon32.png</span><br></pre></td></tr></table></figure>
-<p>注意images后面应该是图标的文件名+格式。</p>
-
-          
+<p>重新部署</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2022/09/20/the-first-arctile/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -469,22 +467,14 @@
 
       
         
-          
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-          
+          Welcome to Hexo
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2022/09/20/hello-world/">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
