@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>建立网站时遇到的问题与解决方案</title>
+    <url>/2022/09/20/the-first-arctile/</url>
+    <content><![CDATA[<p>建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。</p>
+<p>1.部署时出现 fatal: unable to access ‘’: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。<br>网上有解决方法是“解除SSL验证”：输入git config –global http.sslVerify “false” 或 git config –global https.sslVerify “false” 。然后再部署。<br>也有人认为是因为国内网络不稳定导致的，可以多试几次。</p>
+<p>2.在应用了next主题后，也添加了about，categories等页面，但点击后出现cannot GET &#x2F;20%&#x2F;<br>解决方法：在next的_config.yml文件里找到“menu:”，将下面的about: &#x2F;about&#x2F; || user 改为about: &#x2F;about&#x2F;|| user，原文件中about后面的两个符号间有个空格，把空格去掉就好了。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2022/09/20/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -16,14 +24,6 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>建立网站时遇到的问题与解决方案</title>
-    <url>/2022/09/20/the-first-arctile/</url>
-    <content><![CDATA[<p>建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。</p>
-<p>1.部署时出现 fatal: unable to access ‘’: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。<br>网上有解决方法是“解除SSL验证”：输入git config –global http.sslVerify “false” 或 git config –global https.sslVerify “false” 。然后再部署。<br>也有人认为是因为国内网络不稳定导致的，可以多试几次。</p>
-<p>2.在应用了next主题后，也添加了about，categories等页面，但点击后出现cannot GET &#x2F;20%&#x2F;<br>解决方法：在next的_config.yml文件里找到“menu:”，将下面的about: &#x2F;about&#x2F; || user 改为about: &#x2F;about&#x2F;|| user，原文件中about后面的两个符号间有个空格，把空格去掉就好了。</p>
 ]]></content>
   </entry>
 </search>
