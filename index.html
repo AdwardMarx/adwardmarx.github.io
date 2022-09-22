@@ -341,9 +341,9 @@
 
       
         
-          <h2 id="建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。"><a href="#建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。" class="headerlink" title="建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。"></a>建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。</h2><h3 id="1-部署时出现-fatal-unable-to-access-‘’-OpenSSL-SSL-read-Connection-was-reset-errno-10054-的报错。"><a href="#1-部署时出现-fatal-unable-to-access-‘’-OpenSSL-SSL-read-Connection-was-reset-errno-10054-的报错。" class="headerlink" title="1.部署时出现 fatal: unable to access ‘’: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。"></a>1.部署时出现 fatal: unable to access ‘’: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。</h3><p>网上有解决方法是“解除SSL验证”：</p>
+          <h2 id="建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。"><a href="#建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。" class="headerlink" title="建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。"></a>建站的主要流程在网上有很多教程，这里只列举一些我遇到的问题。</h2><h3 id="1-部署时出现-fatal-unable-to-access-‘-‘-OpenSSL-SSL-read-Connection-was-reset-errno-10054-的报错。"><a href="#1-部署时出现-fatal-unable-to-access-‘-‘-OpenSSL-SSL-read-Connection-was-reset-errno-10054-的报错。" class="headerlink" title="1.部署时出现 fatal: unable to access ‘ ‘: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。"></a>1.部署时出现 fatal: unable to access ‘ ‘: OpenSSL SSL_read: Connection was reset, errno 10054 的报错。</h3><p>网上有解决方法是“解除SSL验证”：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global http.sslVerify <span class="string">&quot;false&quot;</span></span><br><span class="line">$ git config --global https.sslVerify <span class="string">&quot;false&quot;</span></span><br></pre></td></tr></table></figure>
-<p>重新部署</p>
+<p>再重新部署。</p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2022/09/20/the-first-arctile/#more" rel="contents">
