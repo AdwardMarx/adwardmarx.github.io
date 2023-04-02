@@ -36,4 +36,10 @@
 <p>注意images后面应该是图标的文件名+格式。</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>a rough way to measure circles&#39;radius</title>
+    <url>/2023/04/02/measure%20radius/</url>
+    <content><![CDATA[<p>The course, Machine Vision and Measruement, requires us to measure the washers’ size.<br>We got this information:<br>The outer diameter of the washer (the middle and the top one) is 12mm.<br>We need to measure the inside diameter of the other two washers.<br><img src="/colorful.jpg" alt="measure radius"></p>
+]]></content>
+  </entry>
 </search>
