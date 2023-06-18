@@ -77,17 +77,21 @@
 
 
 
-<meta name="description" content="Hello! I am Adward Marx. Welcome to my blog.My feelings in studying and working will be recorded here.I’d appreciate it if you could correct my mistakes.You can communicate with me via email.Email: &amp;#">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Adward&#39;s Blog">
-<meta property="og:url" content="https://adwardmarx.github.io/about/index.html">
+<meta name="description" content="这是一门实践课程，要求根据线阵 CCD 捕捉到的物料图像，进行分选算法的编程，在计算机上模拟实现物料的分类，然后对色选机进行调试和参数设定，实现物料分选。给出了两张图片，分别为大米和糯米，要求将两张图片区分开来。一个简单的思路就是通过比较两张图片中米粒的平均体态比(米粒最小外接矩形的长宽比)。大米相较于糯米更加细长，所以平均体态比应该大于糯米。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一种识别大米和糯米的方法">
+<meta property="og:url" content="https://adwardmarx.github.io/2023/06/18/rice/index.html">
 <meta property="og:site_name" content="Adward&#39;s Blog">
-<meta property="og:description" content="Hello! I am Adward Marx. Welcome to my blog.My feelings in studying and working will be recorded here.I’d appreciate it if you could correct my mistakes.You can communicate with me via email.Email: &amp;#">
+<meta property="og:description" content="这是一门实践课程，要求根据线阵 CCD 捕捉到的物料图像，进行分选算法的编程，在计算机上模拟实现物料的分类，然后对色选机进行调试和参数设定，实现物料分选。给出了两张图片，分别为大米和糯米，要求将两张图片区分开来。一个简单的思路就是通过比较两张图片中米粒的平均体态比(米粒最小外接矩形的长宽比)。大米相较于糯米更加细长，所以平均体态比应该大于糯米。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-09-21T13:10:48.000Z">
-<meta property="article:modified_time" content="2022-11-17T05:58:00.093Z">
+<meta property="og:image" content="https://adwardmarx.github.io/2023/06/18/rice/rice.PNG">
+<meta property="og:image" content="https://adwardmarx.github.io/2023/06/18/rice/grice.PNG">
+<meta property="og:image" content="https://adwardmarx.github.io/2023/06/18/rice/result.PNG">
+<meta property="article:published_time" content="2023-06-18T09:44:04.000Z">
+<meta property="article:modified_time" content="2023-06-18T10:18:50.375Z">
 <meta property="article:author" content="Adward Marx">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://adwardmarx.github.io/2023/06/18/rice/rice.PNG">
 
 
 
@@ -117,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://adwardmarx.github.io/about/"/>
+  <link rel="canonical" href="https://adwardmarx.github.io/2023/06/18/rice/"/>
 
 
 
 
 
-  <title> | Adward's Blog</title>
+  <title>一种识别大米和糯米的方法 | Adward's Blog</title>
   
 
 
@@ -262,34 +266,144 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://adwardmarx.github.io/2023/06/18/rice/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Adward's Blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p>Hello! I am Adward Marx. Welcome to my blog.<br>My feelings in studying and working will be recorded here.<br>I’d appreciate it if you could correct my mistakes.<br>You can communicate with me via email.<br>Email: <a href="mailto:&#102;&#x65;&#105;&#97;&#100;&#119;&#97;&#x72;&#100;&#x40;&#111;&#x75;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#46;&#99;&#x6f;&#109;">&#102;&#x65;&#105;&#97;&#100;&#119;&#97;&#x72;&#100;&#x40;&#111;&#x75;&#x74;&#108;&#x6f;&#x6f;&#x6b;&#46;&#99;&#x6f;&#109;</a> or <a href="mailto:&#102;&#101;&#x69;&#x61;&#x64;&#x77;&#97;&#x72;&#100;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;">&#102;&#101;&#x69;&#x61;&#x64;&#x77;&#97;&#x72;&#100;&#64;&#x67;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#111;&#x6d;</a></p>
-
+          <h1 class="post-title" itemprop="name headline">一种识别大米和糯米的方法</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2023-06-18T17:44:04+08:00">
+                2023-06-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>这是一门实践课程，要求根据线阵 CCD 捕捉到的物料图像，进行分选算法的编程，在计算机上模拟实现物料的分类，然后对色选机进行调试和参数设定，实现物料分选。<br>给出了两张图片，分别为大米和糯米，要求将两张图片区分开来。一个简单的思路就是通过比较两张图片中米粒的平均体态比(米粒最小外接矩形的长宽比)。大米相较于糯米更加细长，所以平均体态比应该大于糯米。</p>
+<span id="more"></span>
+<p>程序如下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">import cv2</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">image1_path = <span class="string">&quot;path1&quot;</span>   </span><br><span class="line">image2_path = <span class="string">&quot;path2&quot;</span></span><br><span class="line"></span><br><span class="line">def process(image_path, threshold1, threshold2):</span><br><span class="line">    image = cv2.imread(image_path)  <span class="comment"># 从路径读取图片</span></span><br><span class="line">    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  <span class="comment"># 转为灰度图</span></span><br><span class="line">    blur = cv2.GaussianBlur(gray, (1, 1), 0)        <span class="comment"># 高斯模糊对图像进行降噪</span></span><br><span class="line">    canny = cv2.Canny(blur, threshold1, threshold2)</span><br><span class="line">    <span class="comment"># 用Canny算子提取边缘。白米阈值为10,55。糯米阈值为10，45。</span></span><br><span class="line">    total_ratio = 0     <span class="comment"># 体态比总和</span></span><br><span class="line">    count = 0       <span class="comment">#米粒个数</span></span><br><span class="line">    <span class="comment"># 遍历每个轮廓,计算面积和周长</span></span><br><span class="line">    contours, hierarchy = cv2.findContours(canny,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)</span><br><span class="line">    <span class="keyword">for</span> contour <span class="keyword">in</span> contours:</span><br><span class="line">        <span class="comment"># 获取最小外接矩形并计算长宽比  </span></span><br><span class="line">        rect = cv2.minAreaRect(contour)</span><br><span class="line">        width = rect[1][0]</span><br><span class="line">        height = rect[1][1]</span><br><span class="line">        ratio = width / height </span><br><span class="line">        <span class="comment"># 根据长宽比过滤  </span></span><br><span class="line">        count += 1</span><br><span class="line">        <span class="comment"># 绘制矩形    </span></span><br><span class="line">        box = cv2.boxPoints(rect)</span><br><span class="line">        box = np.int0(box)</span><br><span class="line">        cv2.drawContours(image,[box],0,(0,0,255),1)    </span><br><span class="line">        <span class="comment"># 绘制米粒轮廓</span></span><br><span class="line">        cv2.drawContours(image, [contour], 0, (0,255,0), 1)</span><br><span class="line">        total_ratio += ratio </span><br><span class="line">        Average_ratio = total_ratio/count</span><br><span class="line">    <span class="built_in">return</span> count, Average_ratio, image</span><br><span class="line"></span><br><span class="line">count1, avg_ratio1,image1 = process(image1_path,10,55)  <span class="comment"># 接受返回值</span></span><br><span class="line">count2, avg_ratio2,image2 = process(image2_path,10,45)  <span class="comment"># 接受返回值</span></span><br><span class="line"><span class="built_in">print</span>(f<span class="string">&#x27;图1米粒数:&#123;count1&#125;, 平均体态比:&#123;avg_ratio1&#125;&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(f<span class="string">&#x27;图2米粒数:&#123;count2&#125;, 平均体态比:&#123;avg_ratio2&#125;&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> avg_ratio1 &gt; avg_ratio2:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;图1为白米,图2为糯米&#x27;</span>)</span><br><span class="line">    winname1 = <span class="string">&quot;rice&quot;</span></span><br><span class="line">    winname2 = <span class="string">&quot;glutinous rice&quot;</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;图2为白米,图1为糯米&#x27;</span>)</span><br><span class="line">    winname1 = <span class="string">&quot;glutinous rice&quot;</span></span><br><span class="line">    winname2 = <span class="string">&quot;rice&quot;</span></span><br><span class="line"></span><br><span class="line">cv2.namedWindow(winname1)</span><br><span class="line">cv2.namedWindow(winname2)</span><br><span class="line">cv2.imshow(winname1, image1)</span><br><span class="line">cv2.imshow(winname2, image2)</span><br><span class="line">cv2.waitKey(0)  </span><br><span class="line">cv2.destroyAllWindows()</span><br></pre></td></tr></table></figure>
+<p>处理结果如下<br><img src="/2023/06/18/rice/rice.PNG"><br><img src="/2023/06/18/rice/grice.PNG"><br><img src="/2023/06/18/rice/result.PNG"><br>虽然结果大致准确，但其中最大的问题是：canny的阈值需要根据不同图像进行修改</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">canny = cv2.Canny(blur, threshold1, threshold2)</span><br></pre></td></tr></table></figure>
+<p>在更换图像后，同一组阈值不能适用于不同的图片，这一点目前尚未解决。</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2023/06/17/qtwork/" rel="next" title="基于Qt进行光学系统仿真及测量系统软件的开发">
+                <i class="fa fa-chevron-left"></i> 基于Qt进行光学系统仿真及测量系统软件的开发
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
